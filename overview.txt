@@ -1,0 +1,32 @@
+-- INTRODUCTION -- Agis
+Talk about Thales and his awesome olive oil gig. Explain that the desire to predict agricultural success using mathematics/statistics is as old as civilization. 
+
+Introduce the main case:
+- What is the general question our page discusses?
+- Why is this being discussed?
+
+-- ORIGINAL PAPER -- Stefan
+Talk about Ashenfelter's paper
+- main results
+- why did Ashenfelter do this?
+- Regression is a pretty simple technique.
+- Impact of the paper, people now use these variables? Paper cited often?
+- Video with original interview (show non-science impact)
+
+-- REFERENCE SETS -- Agis + Stefan
+Introduce 4?! new papers
+- Quick summary of each paper (~500 words)
+- New insights?/Results
+- Has the main focus/question shifted?
+- What Data Science techniques are being used?
+- How has the original technique fared?
+
+-- CURRENT STATE OF THE FIELD -- Agis + Stefan
+- Any follow-up in non-scientific literature?
+- Critique of the original paper and the field
+- Create a timeline of ideas, which hurdles have been taken and how broadly are the cases used?
+
+-- ABOUT THE AUTHORS --
+- Why was this page created?
+- Who do we want to thank?
+- How can we be contacted?
