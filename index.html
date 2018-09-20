@@ -1,3 +1,4 @@
+<!-- TODO: make links more obvious -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Red Wine: Price Forecasting</title>
+    <title>Wine Price Forecasting</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/wine2.ico"/>
     <!-- Font Awesome -->
@@ -86,7 +87,7 @@
 					<li><a href="#mu-header">About</a></li>
 					<li><a href="#mu-feature">The Beginnng</a></li>
 					<li><a href="#mu-video">Interview Ashenfelter</a></li>
-					<li><a href="#mu-apps-screenshot">Apps Screenshot</a></li>
+					<li><a href="#mu-apps-screenshot">Academic Follow-Up</a></li>
 					<li><a href="#mu-download">Download</a></li>
 					<li><a href="#mu-faq">FAQ</a></li>
 					<li><a href="#mu-contact">Get In Touch</a></li>
@@ -111,10 +112,11 @@
 							<div class="mu-title-area">
 								<h2 class="mu-title">The birth of quantitative wine analysis</h2>
 								<span class="mu-title-dot"></span>
-								<p style="margin-bottom:1cm;">In 1993 Orley Ashenfelter, professor in Economics at Princeton University, shocked wine connoisseurs, investors and oenologists<sup>1</sup> alike, by presenting announcing that he could predict the quality of a wine several years before it is ready to drink. Ashenfelter wanted a reliably way to find good ones that fit in his budget, which required that he outperform the current system: Traditionally wine tasters would wait until four months after the wine has been placed in a barrel and then start to taste the mixture, long before it has developed it's final taste. Using their experience wine tasters would then try to predict whether the wine would ultimately taste well. This has proven to be a difficult process, as confirmed by Bruce Kaiser, the former director of wine auctioneering at Butterfield & Butterfield who said: "Young wines are changing so quickly that no one, and I mean no one, can really evaluate a vintage at all accurately by taste until it is at least ten years old, perhaps older." So when Ashenfelter announced that he could do what professional tasters couldn't based solely on some weather information something something something.
+                                
+								<p style="margin-bottom:1cm;">In 1993 <!-- TODO: This is inaccurate -->Orley Ashenfelter, professor in Economics at Princeton University, shocked wine connoisseurs, investors and oenologists<sup>1</sup> alike, by presenting announcing that he could predict the quality of a wine several years before it is ready to drink. Ashenfelter wanted a reliably way to find good ones that fit in his budget, which required that he outperform the current system: Traditionally wine tasters would wait until four months after the wine has been placed in a barrel and then start to taste the mixture, long before it has developed it's final taste. Using their experience wine tasters would then try to predict whether the wine would ultimately taste well. This has proven to be a difficult process, as confirmed by Bruce Kaiser, the former director of wine auctioneering at Butterfield & Butterfield who has said that: "Young wines are changing so quickly that no one, and I mean no one, can really evaluate a vintage at all accurately by taste until it is at least ten years old, perhaps older." So when Ashenfelter announced that he could do what professional tasters couldn't based solely on some weather information the established order of wine specialists was sceptical to say the least.
                                 </p>
                                 <h3 class="mu-title">The formula</h3>
-                                In his paper which he <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2008.02148.x">republished</a> in 2008 Ashenfelter investigates five factors that he thinks could affect Bordeaux wine prices. Because young Bordeaux wines are more astringent many people prefer to drink these wines after they have aged a bit, meaning that wines are traded when they are young and sold for more once they are older. In the end Ashenfelter settled on using three weather-related variables, in addition to the age of the wine, which allows him to explain approximately 83% of all variation in the average price of Bordeaux wine vintages. Below we show exactly what these variables are and how they matter. If you'd prefer to hear it from the original source, scroll down a bit further and check out <a href="#mu-video">Ashenfelter's interview on Good morning America</a>.
+                                In his paper which he <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2008.02148.x">republished</a> in 2008 Ashenfelter investigates five factors that he thinks could affect Bordeaux wine prices. Because young Bordeaux wines are more astringent many people prefer to drink these wines after they have aged a bit, meaning that wines are traded when they are young and sold for more once they are older. In the end Ashenfelter settled on using three weather-related variables, in addition to the age of the wine, which allows him to explain approximately 83% of all variation in the average price of Bordeaux wine vintages. Below we show exactly what these variables are and how they matter, just click the buttons next to description to get a visualisation of the impact of different variables. If you'd prefer to hear it from the original source, scroll down a bit further and check out <a href="#mu-video">Ashenfelter's interview on Good morning America</a>.
                                 
 							</div>
 
@@ -180,7 +182,7 @@
 						                        </div>
 						                        <div class="media-body">
 							                        <h3 class="media-heading">Average growing season temperature</h3> <!-- TODO: Write description of image -->
-							                        <p>In general a </p>
+							                        <p>In general a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam eius, ullam nisi repellendus deserunt distinctio, eveniet libero velit quo voluptatem sequi, ipsa asperiores ad? Facilis molestiae cum aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam eius, ullam nisi repellendus deserunt distinctio, eveniet libero velit quo voluptatem sequi, ipsa asperiores ad? Facilis molestiae cum aliquam.</p>
 						                        </div>
 						                    </div>
 						                    <!-- End single feature item -->
@@ -190,7 +192,10 @@
 								</div>
                                 <div class="row">
                                     <div class="mu-faq-content">
-                                        In total this means that Ashenfelter's prediction can be summarized as: Log(Price) = 0.0238*Age + 0.616*Temp - 0.00386*RainA-S + 0.00117RainO-M. <!-- TODO: Change this to look nice --> This is a short and sweet formula (just as one would expect from a <a href="https://www.wikipedia.com/regression">regression</a>) that managed to outpredict some of the leading wine experts at the time of it's conceivement. <!-- TODO: Write about number of citations and impact -->
+                                        <p style="margin-bottom:1cm;">
+                                            Armed with the knowledge that these factors were in fact related to the price of wines years later, a simple <a href="https://www.wikipedia.com/regression">regression</a> can be used on the logarithm of the price which yields the following formula: $$Log(Price) = 0.0238*Age + 0.616*Temp - 0.00386*Rain_{\text(Aug-Sep)} + 0.00117*Rain_{\text(Oct-Mar)}$$. Compared to the old-fashioned way this method is incredibly simple, easy and, perhaps most importantly, it gives a competative edge when buying wines at a young age because it does not relies on actual tasting. It is probably because of these reasons that Ashenfelter's ideas have had such a major impact. </p>
+                                        <h3 class="mu-title">Impact</h3>
+                                        In 1986 Ashenfelter started publishing a newsletter called <a href="http://www.liquidasset.com/">Liquid Assets</a> and although it started small (~600 subscribers in 1990) it quickly got the attention of some of Americas leading wine critics after a <a href="https://www.nytimes.com/1990/03/04/us/wine-equation-puts-some-noses-out-of-joint.html">publication</a> in the New York Times where Ashenfelter boldly claimed that the 1986 vintage, which critics had acclaimed as an outstanding wine in the making, was going to be mediocre at best and that the 1989 vintage, which was only three months into the aging process and hadn't been tasted yet, was going to be the best wine of the century! These claims prompted Robert M. Parker Jr., who was generally regarded as the most influential wine critic in America, to assert that Ashenfelter's predictions where "ludicrous and absurd" and other wine experts generally agreed that there was no merrit to these methods. History however shows that Ashenfelter's predictions where right on the mark and nowadays it seems that, although they are loath to admit it, the connoisseurs have also started taking the weather into account when they make their own predictions, which are very close to the ones obtained using the above formula. 
                                     </div>
                                 </div>
 							</div>
@@ -235,69 +240,57 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="mu-apps-screenshot-area">
-
+						<div class="mu-feature-area">
 							<div class="mu-title-area">
-								<h2 class="mu-title">APPS SCREENSHOT</h2>
+								<h2 class="mu-title">Academic Follow-up</h2>
 								<span class="mu-title-dot"></span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
-							</div>
-
-
-							<!-- Start Apps Screenshot Content -->
-							<div class="mu-apps-screenshot-content">
-
-								<div class="mu-apps-screenshot-slider">
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/01.jpg" alt="App screenshot img">
+								<p>This will be a short intro and explanation of what this section is about before we start introducing each indivicual article</p>
+                            </div>
+                            <div class="mu-feature-content">
+				                <div class="row">
+                                    <div class="col-md-6">
+										<div class="mu-feature-content-right">
+											<img id= "china" class="mu-profile-img" src="assets/images/China-Wine-Trends.jpg">
+										</div>
 									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/02.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/03.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/04.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/05.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/01.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/02.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/03.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/04.jpg" alt="App screenshot img">
-									</div>
-
-									<div class="mu-single-screeshot">
-										<img src="assets/images/screenshot/05.jpg" alt="App screenshot img">
-									</div>
-
-								</div>
-
-							</div>
-							<!-- End Apps Screenshot Content -->
-
-						</div>
-					</div>
-				</div>
-			</div>
+                                    <div class="col-md-6">
+										<div class="mu-feature-content-left">
+                                            <h3 class="mu-title"><a href="https://doi.org/10.1016/j.qref.2017.07.016">The Role of Emerging Markets</a></h3>
+                                            <p style="margin-bottom:1cm;">
+                                                It is clear from the rest of this page that the interest in French wines goes far beyond the French borders. Between 2001 and 2011 the <a href="https://www.liv-ex.com/home.do">major fine wine indexes</a> which are based on the auction prices of fine wines tripled in value. Jean-Marie Cardebat and Linda Jiao from the university of Bordeaux show in <a href="https://doi.org/10.1016/j.qref.2017.07.016">their 2017 article</a> that the price of fine wines is cointegrated with the stock markets in Pacific Asia and especially with the Chinese stock market. In addition they find a causal relation where the economic growth in certain regions causes a direct increase in prices of specific wines. This is an interesting contribution because it challenges the hedonic assumption that the price of fine wine is based exclusively on it's taste and quality, which is something that e.g. Ashenfelter has to assume. Instead the paper shows that, much like any product that is actively traded, this price is also subjected to traditional market effects.
+                                            </p>
+                                            <p>
+                                                Cardebat and Jiao use something called a <a href="https://en.wikipedia.org/wiki/Cointegration_test">Cointegration Test</a> which is a statistical method that compares different time series and checks whether there is a statistically significant relation between them. In this case, the cointegration tests where used to compare fine wine prices with 25 different MSCI (Morgen Stanley Capital International) stock indexes. These indexes are chosen on four levels:
+                                            </p>
+                                            <ol>
+                                                <li>All Country (AC) indexes such as AC Europe, AC Americas and AC Asia Pacific.</li>
+                                                <li>Developed Markets (DM) such as G7, EU and North America.</li>
+                                                <li>Emerging Markets (EM) such as BRIC (Brazil, Russia, India, China) and EM Asia.</li>
+                                                <li>Indidvidual Country Indexes, such as China, USA and Australia.</li>
+                                            </ol>
+                                            <p>
+                                                Using the cointegration tests in combination with a <a href="https://en.wikipedia.org/wiki/Granger_causality">Granger Causality Model</a> allows Cardebat and Jiao to find the causal effects that the different stock markets have on the fine wine price. Below we share some of their most interesting finds.
+                                            </p>
+                                            <h5>Developed Markets</h5>
+                                            <p>
+                                                None of the MSCI Developed Market indexes are cointegrated with the combined fine wine index. Only when looking specifically at Champagne and Burgundy wines can a significant relation be found.
+                                            </p>
+							             </div>
+						              </div>
+					            </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 style="margin-top:1cm;">Emerging Markets</h5>
+                                        <p>
+                                            As can be seen in figure <!--TODO: insert figure here--> there is a strong relation between the stock market MSCI indexes of Emerging markets <em>after</em> 200. This can be explained by the link between stock markets and an increase in household disposable income and the rise of the middle class. With this growth in wealth comes the pursuit for a more fashionable lifestyle, which includes expensive wines. In China, whose MSCI stock market index the experiment found to have the strongest effect on the fine wine index, the <a href="https://en.wikipedia.org/wiki/Veblen_good">Veblen effect</a> causes people to look for fine wines as a reflection of wealth and social status. Combined with a <a href="http://www.oiv.int/en/databases-and-statistics/statistics">67% increase in wine consumption</a>, this explains the strong effect the growing Chinese economy has had on the fine wine price index.
+                                        </p>
+                                    </div>
+                                </div>
+				            </div>
+			             </div>
+                    </div>
+                </div>
+            </div>
 		</section>
 		<!-- End Apps Screenshot -->
 
@@ -561,7 +554,10 @@
             return false;
             }
       </script> <!--TODO: Add relevant images-->
-
-	
+    <!-- Displaying of formulas -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="assets/MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>	
   </body>
 </html>

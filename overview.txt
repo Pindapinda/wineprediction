@@ -5,15 +5,17 @@ Introduce the main case:
 - What is the general question our page discusses?
 - Why is this being discussed?
 
--- ORIGINAL PAPER -- Stefan
+-- THE BEGINNING -- Stefan
 Talk about Ashenfelter's paper
 - main results
 - why did Ashenfelter do this?
 - Regression is a pretty simple technique.
 - Impact of the paper, people now use these variables? Paper cited often?
+
+-- INTERVIEW ASHENFELTER --
 - Video with original interview (show non-science impact)
 
--- REFERENCE SETS -- Agis + Stefan
+-- ACADEMIC FOLLOW-UP -- Agis + Stefan
 Introduce 4?! new papers
 - Quick summary of each paper (~500 words)
 - New insights?/Results
@@ -30,3 +32,6 @@ Introduce 4?! new papers
 - Why was this page created?
 - Who do we want to thank?
 - How can we be contacted?
+
+-- SOURCES --
+- Links to the original articles are also hidden in text but we could also put them here?
